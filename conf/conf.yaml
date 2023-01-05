@@ -1,0 +1,17 @@
+feature_vectors_dir: 'data/feature_vectors'
+model_dir: 'data/model'
+model_class: ''       # todo...
+col_of_interest: 'id'
+row_of_interest_selector: 'F.col("id") == 1'  # id if included in the data, else set a filter, e.g. F.col('name') == 'test'
+column_to_examine: 'prediction'
+output: 'data/output.json'
+test_data: 1
+
+#database:
+#  name: pyshap
+#  user: !ENV ${POSTGRES_USER}
+#  password: !ENV ${POSTGRES_PASS}
+#  host: !ENV ${POSTGRES_HOST}
+#  port : 5432
+#  type: 'postgres'
+#spark:
